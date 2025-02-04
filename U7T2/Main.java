@@ -2,20 +2,18 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        Integer num1 = new Integer(5);
-        Integer num2 = 10;
-        int num3 = 15;
-        
-        ArrayList<Integer> numList = new ArrayList<Integer>();
-        
-        numList.add(num1);
-        numList.add(num2);
-        numList.add(num3);
-        
-        int sum = num1 + num2 + num3;
-        
-        numList.add(sum);
-        
-        System.out.println(numList);
+        ArrayList<Integer> nums = new ArrayList<Integer>();
+        nums.add(10);
+        nums.add(30);
+        nums.add(25);
+        nums.add(40);
+        nums.add(55);
+        nums.add(45);
+        nums.add(20);
+        int sum = 0;
+        for(int i = 0; i < nums.size(); i ++){
+          sum += nums.get(i);
+        }
+        System.out.println(sum);    
     }
 }
